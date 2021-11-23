@@ -4,6 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
     <Nullable>enable</Nullable>
     <LangVersion>9</LangVersion>
+    <RepositoryUrl>https://github.com/api-lighter/ApiResponseCommon.git</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,5 +1,5 @@
-﻿using System;
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
+using System;
 
 namespace ApiResponse.Common
 {
@@ -23,7 +23,7 @@ namespace ApiResponse.Common
                 throw new ArgumentNullException(nameof(item));
             if (StringUtils.StringIsNullOrWhitespace(collection))
                 throw new ArgumentNullException(nameof(collection));
-            
+
             return new Result
             {
                 IsSuccess = false,

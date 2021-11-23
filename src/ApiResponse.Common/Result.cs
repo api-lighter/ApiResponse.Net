@@ -1,5 +1,5 @@
-﻿using System;
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
+using System;
 
 namespace ApiResponse.Common
 {
@@ -12,7 +12,7 @@ namespace ApiResponse.Common
         /// Indicates that operation was succeeded
         /// </summary>
         public bool IsSuccess { get; set; }
-        
+
         /// <summary>
         /// Error object
         /// </summary>
@@ -40,7 +40,7 @@ namespace ApiResponse.Common
             IsSuccess = false;
             Error = new Error(errorCode, message);
         }
-        
+
         [NotNull]
         public static Result Ok() => new Result()
         {

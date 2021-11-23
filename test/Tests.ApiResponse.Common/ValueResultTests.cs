@@ -1,5 +1,4 @@
 ﻿using ApiResponse.Common;
-using Moq;
 using NUnit.Framework;
 using System;
 

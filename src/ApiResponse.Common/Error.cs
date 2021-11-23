@@ -14,7 +14,7 @@ namespace ApiResponse.Common
         {
             ErrorCode = ErrorCodes.Ok;
         }
-        
+
         /// <summary>
         /// Constructor
         /// </summary>
@@ -31,7 +31,7 @@ namespace ApiResponse.Common
         /// Some error codes hardcoded in <see cref="ErrorCodes"/>
         /// </summary>
         public int ErrorCode { get; set; }
-        
+
         /// <summary>
         /// Error message
         /// </summary>

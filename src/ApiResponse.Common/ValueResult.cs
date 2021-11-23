@@ -1,9 +1,5 @@
 ﻿using JetBrains.Annotations;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ApiResponse.Common
 {
@@ -25,7 +21,7 @@ namespace ApiResponse.Common
 
         public static ValueResult<T> Fail(int errorCode, [ItemNotNull] string message)
         {
-            if(StringUtils.StringIsNullOrWhitespace(message))
+            if (StringUtils.StringIsNullOrWhitespace(message))
                 throw new ArgumentNullException(nameof(message));
 
             return new ValueResult<T>

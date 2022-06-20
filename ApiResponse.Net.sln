@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{503FEB10-27C1-4E53-90B7-46FC1E5A80F9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiResponse.Net.OperationResult", "src\ApiResponse.Common\ApiResponse.Net.OperationResult.csproj", "{FE78EBE9-BED5-42C1-8E37-CFB0DAD4EC4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiResponse.Net.OperationResult", "src\ApiResponse.Net.OperationResult\ApiResponse.Net.OperationResult.csproj", "{FE78EBE9-BED5-42C1-8E37-CFB0DAD4EC4B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{7970A488-4B9C-446D-B993-4382197F4B7F}"
 EndProject

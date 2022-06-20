@@ -1,7 +1,7 @@
 ﻿using JetBrains.Annotations;
 using System;
 
-namespace ApiResponse.Common
+namespace ApiResponse.Net.OperationResult
 {
     public class ValueResult<T> : Result
     {

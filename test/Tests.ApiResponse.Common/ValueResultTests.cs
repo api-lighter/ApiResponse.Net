@@ -1,8 +1,8 @@
-﻿using ApiResponse.Common;
+﻿using ApiResponse.Net.OperationResult;
 using NUnit.Framework;
 using System;
 
-namespace Tests.ApiResponse.Common
+namespace Tests.ApiResponse.Net.OperationResult
 {
     [TestFixture]
     public class ValueResultTests

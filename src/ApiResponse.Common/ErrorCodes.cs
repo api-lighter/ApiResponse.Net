@@ -1,4 +1,4 @@
-﻿namespace ApiResponse.Common
+﻿namespace ApiResponse.Net.OperationResult
 {
     /// <summary>
     /// Error codes

@@ -1,6 +1,6 @@
 ﻿using JetBrains.Annotations;
 
-namespace ApiResponse.Common
+namespace ApiResponse.Net.OperationResult
 {
     /// <summary>
     /// Simple error class

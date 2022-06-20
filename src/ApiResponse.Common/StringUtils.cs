@@ -1,4 +1,4 @@
-﻿namespace ApiResponse.Common
+﻿namespace ApiResponse.Net.OperationResult
 {
     public static class StringUtils
     {

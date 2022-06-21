@@ -1,13 +1,25 @@
-﻿namespace ApiResponse.Net.OperationResult
+﻿using System.ComponentModel;
+
+namespace ApiResponse.Net.OperationResult
 {
     /// <summary>
-    /// Error codes
+    /// Error codes definition
     /// </summary>
-    public class ErrorCodes
+    public enum ErrorCode
     {
-        public static int Ok = 0;
-        public static int InternalError = 0x01;
-        public static int InvalidInput = 0x02;
-        public static int NotFound = 0x03;
+        [Description("Critical internal error")]
+        InternalError = 0x0100,
+
+        [Description("Not found resource")]
+        NotFound = 0x0200,
+
+        [Description("Access denied to resources")]
+        AccessDenied = 0x0300,
+
+        [Description("Resource is busy")]
+        ResourceBusy = 0x0400,
+
+        [Description("Invalid params passed")]
+        InvalidParams = 0x0500
     }
 }

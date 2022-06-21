@@ -18,7 +18,7 @@ namespace ApiResponse.Net.OperationResult
             if (string.IsNullOrEmpty(operationId))
                 throw new ArgumentNullException(nameof(operationId));
 
-            return new OperationResult<T> { Result = value, Id = operationId };
+            return new OperationResult<T> { Result = value, Id = operationId, Success = true };
         }
 
         public static OperationResult<T> Failed<T>(ErrorCode code)

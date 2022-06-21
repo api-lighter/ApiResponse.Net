@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApiResponse.Net.OperationResult;
 
 namespace ApiResponse.Net.SampleApp.Controllers
 {
@@ -18,22 +19,25 @@ namespace ApiResponse.Net.SampleApp.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        private readonly OperationContext _operationContext;
+
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, OperationContext operationContext)
         {
             _logger = logger;
+            _operationContext = operationContext;
         }
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public IActionResult Get()
         {
             var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            return Ok(Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = rng.Next(-20, 55),
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
-            .ToArray();
+            .ToArray().Success(_operationContext.RequestId.ToString()));
         }
     }
 }

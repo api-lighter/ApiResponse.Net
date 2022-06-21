@@ -1,3 +1,4 @@
+using ApiResponse.Net.OperationResult;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -32,6 +33,9 @@ namespace ApiResponse.Net.SampleApp
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ApiResponse.Net.SampleApp", Version = "v1" });
             });
+
+            // Add context for every operation. Used for passing props aka `OperationId`.
+            services.AddOperationContext();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -8,4 +8,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\ApiResponse.Net.OperationResult\ApiResponse.Net.OperationResult.csproj" />
+    <ProjectReference Include="..\..\src\ApiResponse.Net.Pagination\ApiResponse.Net.Pagination.csproj" />
+  </ItemGroup>
+
 </Project>
